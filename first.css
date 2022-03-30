@@ -23,6 +23,10 @@ nav .nav-bar a{
     color:#013F1D;
     margin: 15px;
 }
+nav .Logo{
+    display: none;
+    z-index: -1000;
+}
 nav .member{
     display: flex;
     align-items: center;

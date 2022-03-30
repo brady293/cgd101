@@ -1,0 +1,45 @@
+*{
+    list-style: none;
+}
+body{
+    background-color: #DDDBDB;
+}
+.nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    background-color: #FFFDF5;
+    justify-content: space-between;
+    z-index: 20;
+    position: sticky;
+    top: 0;
+}
+.nav .logo img{
+    width: 200px;
+    padding: 15px 30px ;
+}
+.nav .nav-bar {
+    display: flex;
+    align-items: center;
+}
+.nav .nav-bar a{
+    text-decoration: none;
+    color:#013F1D;
+    margin: 15px;
+}
+.nav .Logo{
+    display: none;
+    z-index: -1000;
+}
+.nav .member{
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
