@@ -1,7 +1,7 @@
 body{
     background-color: #DDDBDB;
 }
-nav{
+.nav{
     background-color: #FFFDF5;
     display: flex;
     justify-content: space-between;
@@ -10,24 +10,24 @@ nav{
     position: sticky;
     top: 0;
 }
-nav .logo img{
+.nav .logo img{
     width: 200px;
     padding: 15px 30px ;
 }
-nav .nav-bar {
+.nav .nav-bar {
     display: flex;
     align-items: center;
 }
-nav .nav-bar a{
+.nav .nav-bar a{
     text-decoration: none;
     color:#013F1D;
     margin: 15px;
 }
-nav .Logo{
+.nav .Logo{
     display: none;
     z-index: -1000;
 }
-nav .member{
+.nav .member{
     display: flex;
     align-items: center;
     padding: 10px 30px;
