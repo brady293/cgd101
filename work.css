@@ -32,3 +32,44 @@ body{
     align-items: center;
     padding: 10px 30px;
 }
+h2{
+    font-size: 30px;
+    margin: 50px 10px;
+    color: #94928d;
+}
+.item{
+    width: 370px;
+    margin: 15px;
+    position: relative;
+}
+.item .pic img{
+    width: 100%;
+}
+.item p{
+    position: absolute;
+    background-color: #fff;
+    color: #94928d;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 300px;
+    bottom: -30px;
+    font-size: 25px;
+    padding: 10px;
+}
+.footer .container{
+    display: flex;
+}
+.footer .community{
+    margin: 20px;
+}
+.footer .community i{
+    font-size: 60px;
+    padding: 10px;
+}
+.footer .txt{
+    color: #aaa;
+    width: 500px;
+    line-height: 1.5;
+    margin: 20px;
+}
