@@ -64,9 +64,9 @@ body{
     width: 30%;
     position: relative;
     bottom: 50px;
-    right: 30px;
+    right: 60px;
     display: flex;
-    margin: 0 auto;
+    margin:  auto;
     padding: 10px;
 }
 .banner .pic .rt{
