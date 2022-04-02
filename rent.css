@@ -1,5 +1,6 @@
 body{
     background-color: #DDDBDB;
+    list-style: none;
 }
 .nav{
     background-color: #FFFDF5;
@@ -32,9 +33,41 @@ body{
     align-items: center;
     padding: 10px 30px;
 }
-.container{
-    width: 1200px;
-    margin: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+h2{
+    text-align: center;
+    font-size: 36px;
+    margin: 30px;
+    color:#94928d;
+}
+.photo-studio .title-pic{
+    padding:40px;
+}
+.photo-studio .title-pic img{
+    width: 1110px;
+}
+.photo-studio .place-pic img{
+    width: 100%;
+}
+.price .title{
+    font-size: 25px;
+    color: #94928d;
+    margin: 30px 0;
+    text-align: center;
+}
+.price .card .style{
+    color:#AB7D7D;
+    font-size: 25px;
+}
+.price .people, .weekday, .holiday, .other{
+    font-size: 20px;
+    margin: 20px 0;
+    color: #44433f;
+}
+.reserve .item .process{
+    text-align: center;
+    font-size: 25px;
+    color: #94928d;
+}
+.reserve .item .process ul{
+    display: flex;
 }
