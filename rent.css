@@ -85,6 +85,55 @@ h2{
     font-size: 30px;
     color: #fa0;
 }
+.reserve .box{
+    display: flex;
+    justify-content: center;
+    width: 1000px;
 
-
-
+}
+.box .cancel-change{
+    width: 400px;
+    margin: 50px;
+}
+.box .cancel-change .title{
+    padding: 10px 0;
+    color: #AB7D7D;
+    font-size: 25px;
+}
+.box .cancel-change p{
+    font-size: 15px;
+    line-height: 1.5;
+    color: #44433f;
+}
+.box .cancel-change span{
+    color: red;
+}
+.box .notice{
+    margin: 50px;
+}
+.box .notice .title{
+    padding: 10px 0;
+    color: #AB7D7D;
+    font-size: 25px;
+}
+.box .notice p{
+    font-size: 15px;
+    line-height: 1.5;
+    color: #44433f;
+}
+.footer .container{
+    display: flex;
+}
+.footer .community{
+    margin: 20px;
+}
+.footer .community i{
+    font-size: 60px;
+    padding: 10px;
+}
+.footer .txt{
+    color: #aaa;
+    width: 500px;
+    line-height: 1.5;
+    margin: 20px;
+}
