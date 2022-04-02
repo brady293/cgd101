@@ -73,8 +73,7 @@ h2{
     text-align: center;
 }
 .reserve .item ul :hover{
-    background-color: #fa0;
-    color: #fff;
+    box-shadow: 3px 3px 10px 20px rgba(255, 170, 0, 0.432);
 }
 .reserve .item li{
     width: 184px;
