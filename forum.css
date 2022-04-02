@@ -38,3 +38,109 @@ body{
     padding-left: 15px;
     padding-right: 15px;
 }
+.forum{
+    position: relative;
+}
+.forum h2{
+    margin: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+.forum .title{
+    font-size: 25px;
+    margin: 30px 70px;
+    color: #AB7D7D;
+}
+.item-group{
+    display: flex;
+}
+.item-group .card{
+    width: 254px;
+    margin: 70px;
+    border: 3px solid rgb(243, 196, 101);
+    border-radius: 10%;
+    padding-top: 30px;
+}
+.item-group .user{
+    display: flex;
+    align-items: center;
+}
+.item-group .pic img{
+    border-radius: 80%;
+    width: 50px;
+    height: 50px;
+}
+.item-group .name{
+    font-size: 15px;
+    padding-left: 15px;
+}
+.item-group .Ans{
+    margin: 70px;
+}
+.message{
+    background-image: url(./user/forum.png);
+    background-size: cover;
+    width: 100%;
+    min-height: 700px;
+    position: absolute;
+}
+.message h3{
+    position: relative;
+    top: 40px;
+    left: 200px;
+    font-size: 30px;
+    width: 300px;
+    color: #fa0;
+}
+.message .name{
+    position: relative;
+    top: 70px;
+    left: 200px;
+    width: 150px;
+    background-color: #ccc;
+}
+.message .ask{
+    position: relative;
+    top: 100px;
+    left: 200px;
+    width: 250px;
+    padding: 80px;
+    background-color: #ccc;
+}
+.message .btn-3{
+    position: relative;
+    top: 120px;
+    left: 550px;
+    width: 80px;
+    font-size: 15px;
+    border-radius: 15%;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.473);
+}
+.message .btn-3:hover{
+    box-shadow: inset 3px rgba(0, 0, 0, 0.473);
+}
+.community .fa-facebook-square{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 450px;
+    left: 200px;
+    font-size: 60px;
+}
+.community .fa-instagram{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 450px;
+    left: 200px;
+    font-size: 60px;
+    margin: 50px;
+}
+.footer .txt{
+    top: 430px;
+    left: 200px;
+    position: relative;
+    color: #aaa;
+    width: 500px;
+    line-height: 1.5;
+}
