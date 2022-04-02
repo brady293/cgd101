@@ -1,6 +1,5 @@
 body{
     background-color: #DDDBDB;
-    list-style: none;
 }
 .nav{
     background-color: #FFFDF5;
@@ -68,6 +67,24 @@ h2{
     font-size: 25px;
     color: #94928d;
 }
-.reserve .item .process ul{
+.reserve .item ul {
     display: flex;
+    justify-content: center;
+    text-align: center;
 }
+.reserve .item ul :hover{
+    background-color: #fa0;
+    color: #fff;
+}
+.reserve .item li{
+    width: 184px;
+    padding: 100px;
+    margin: 10px;
+    border-radius: 100%;
+    border:3px solid#fa0;
+    font-size: 30px;
+    color: #fa0;
+}
+
+
+
