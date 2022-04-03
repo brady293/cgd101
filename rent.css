@@ -44,8 +44,17 @@ h2{
 .photo-studio .title-pic img{
     width: 1110px;
 }
+.photo-studio .place-pic{
+    overflow: hidden;
+}
 .photo-studio .place-pic img{
     width: 100%;
+    opacity: 1;
+    transition: all .3s ease-out;
+}
+.photo-studio .place-pic img:hover{
+    transform: scale(1.3);
+    opacity: .5;
 }
 .price .title{
     font-size: 25px;
