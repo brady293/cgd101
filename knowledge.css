@@ -32,3 +32,13 @@ body{
     align-items: center;
     padding: 10px 30px;
 }
+.container{
+    width: 1200px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.knowledge h2{
+    font-size: 30px;
+    color: #94928d;
+}
