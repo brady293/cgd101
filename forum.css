@@ -57,7 +57,7 @@ body{
 .item-group .card{
     width: 254px;
     margin: 70px;
-    border: 3px solid rgb(243, 196, 101);
+    border: 3px solid #fdb837;
     border-radius: 10%;
     padding-top: 30px;
 }
@@ -90,7 +90,7 @@ body{
     left: 200px;
     font-size: 30px;
     width: 300px;
-    color: #fa0;
+    color: #fdb837;
 }
 .message .name{
     position: relative;
