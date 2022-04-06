@@ -39,7 +39,6 @@ body{
 }
 .container{
     width: 1200px;
-    display: flex;
     margin: auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -47,6 +46,7 @@ body{
 .about{
     width: 1140px;
     margin: auto;
+    padding: 0 30px;
 }
 .about h2{
     font-size: 30px;
@@ -58,6 +58,9 @@ body{
     font-size: 20px;
     line-height: 2;
     color:#94928d
+}
+.item-group{
+    display: flex;
 }
 .item{
     width: 350px;
