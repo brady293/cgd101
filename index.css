@@ -63,7 +63,7 @@ body{
 .banner .pic .c{
     width: 30%;
     position: relative;
-    bottom: 50px;
+    bottom: 30px;
     right: 30px;
     display: flex;
     margin:  auto;
@@ -71,9 +71,9 @@ body{
 }
 .banner .pic .rt{
     position: absolute;
-    right: 170px;
+    right: 200px;
     top: 90px;
-    width: 30%;
+    width: 25%;
 }
 .banner .pic .rb{
     position: absolute;
@@ -194,7 +194,7 @@ body{
     line-height: 1.5;
 }
 .forum {
-    background-image: url(./pic/talk.png);
+    background-image: url(./pic/talk.jpg);
     background-size: cover;
     width: 100%;
     min-height: 700px;

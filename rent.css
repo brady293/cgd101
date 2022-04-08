@@ -80,12 +80,9 @@ h2{
     justify-content: center;
     text-align: center;
 }
-.reserve .item ul :hover{
-    box-shadow: 3px 3px 10px 20px rgba(255, 170, 0, 0.432);
-}
 .reserve .item li{
-    width: 184px;
-    padding: 100px;
+    width: 80px;
+    padding: 70px;
     margin: 10px;
     border-radius: 100%;
     border:3px solid#fa0;
@@ -111,6 +108,7 @@ h2{
     font-size: 15px;
     line-height: 1.5;
     color: #44433f;
+    text-indent: -1em;
 }
 .box .cancel-change span{
     color: red;
