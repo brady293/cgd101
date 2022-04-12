@@ -8,31 +8,266 @@
     <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/css/all.css">
     <link rel="stylesheet" href="./all.min.css">
     <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./shoot.css">
+    <!-- <link rel="stylesheet" href="./shoot.css"> -->
     <link rel="stylesheet" href="./grid.css">
     <link rel="shortcut icon" href="./pic/favicon.ico">
+    <style>
+        body,html{
+            background-color: #DDDBDB;
+            scroll-behavior: smooth;
+            list-style: none;
+        }
+        .nav{
+            background-color: hsl(48, 100%, 98%);
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .nav h1{
+            margin: auto;
+            width: 200px;
+            padding-top: 10px;
+        }
+        .nav h1 img{
+            width: 100%;    
+            vertical-align: top;
+        }
+        .hb{
+            width: 40px;
+            height: 40px;
+            background-color: transparent;
+            position: relative;
+            border-radius: 30%;
+            
+        }
+        .hb span{
+            position: absolute;
+            width: 34px;
+            height: 2px;
+            background-color: #013F1D;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        .hb span:first-child{
+            top: 11px;
+        }
+        .hb span:nth-child(2){
+            top: 0;
+            bottom: 0;
+        }
+        .hb span:last-child{
+            bottom: 11px;
+        }
+        #menu-switch{
+            position: fixed;
+            z-index: -20;
+            top: 0;
+        }
+        #menu-switch:checked ~ .nav .hb span:first-child{
+            top: 19px;
+            transform: rotate(45deg);
+            transition: top .8s,transform .3s .3s;
+        } 
+        #menu-switch:checked ~ .nav .hb span:nth-child(2){
+            display: none;
+        }
+        #menu-switch:checked ~ .nav .hb span:last-child{
+            bottom: 19px;
+            transform: rotate(135deg);
+            transition: bottom .8s,transform .3s .3s;
+        }
+        .nav-bar{
+            position: absolute;
+            background-color: rgb(247, 202, 113);
+            top: 100%;
+            left: -100%;
+            width: 100%;
+        }
+        #menu-switch:checked ~ .nav .nav-bar{
+            left: 0;
+            transition: left .5s;
+        }
+        .nav-bar a{
+            display: block;
+            padding: 10px;
+            color: #013F1D;
+            text-decoration: none;
+            text-align: center;
+        } 
+        .fake{
+            width: 100%;
+            height: 70px;
+            position: absolute;
+            background-color: #DDDBDB;
+            z-index: 1;
+            top: 50px;
+        }
+        .scroll-nav{
+            height: 30px;
+            opacity: .7;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            position: sticky;
+            padding: 10px;
+            top: 60px;
+        }
+        .scroll-nav a{
+            padding: 0 10px;
+        }
+        .scroll-nav a{
+            font-size: 16px;
+            text-decoration: none;
+            color: #013F1D;
+        }
+        .shoot{
+            padding: 10px 20px;
+        }
+        .shoot h2{
+            font-size: 25px;
+            margin-bottom: 30px;
+            color:#24B9F9;
+        }
+        .shoot .card{
+            border: 2px solid#aaa;
+            padding: 10px;
+            margin: 5px;
+        }
+        .shoot .card img{
+            width: 100%;
+        }
+        .card .card-content{
+            text-align: center;
+        }
+        .card-content .title{
+            padding: 10px;
+            color: #A17C6B;
+        }
+        .card-content .money{
+            padding: 20px;
+            color:#aaa;
+        }
+        .card-content p{
+            color:#aaa;
+        }
+        .process{
+            padding: 0 30px;
+            text-align: center;
+        }
+        .process .item .title{
+            margin: 20px;
+            font-size: 20px;
+            color: #A17C6B;
+        }
+        .process .item p{
+            line-height: 1.5;
+            color: #4A7C59;
+        }
+        .txt{
+            padding: 0 30px;
+            line-height: 1.5;
+        }
+        .footer .community{
+            padding: 0 30px;
+            font-size: 30px;
+            padding-top: 50px;
+            padding-bottom: 10px;
+        }
+        .community .fa-facebook-square:hover{
+            color: blue;
+        }
+        .community .fa-instagram:hover{
+            color: #fa0;
+        }
+        .txt{
+            color: #8F8686;
+        }
+        .txt .P{
+            color:#c0bcbc;
+        }
+        @media screen and (min-width:768px){
+            .fake{
+                display: none;
+            }
+            .scroll-nav{
+                display: none;
+            }
+            h2{
+                padding: 50px 0;
+            }
+            .process .item p{
+                width: 70%;
+                margin: auto;
+            }
+            .txt{
+                width: 70%;
+            }
+        }
+        @media screen and (min-width:1200px){
+            .hb{
+                display: none;
+            }
+            .nav-bar{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                position: relative;
+                left: 0;
+                background-color: transparent;
+                transition: none;
+            }
+            .container{
+                width: 1200px;
+            }
+            .process .item p{
+                width: 50%;
+            }
+            .txt{
+                width: 50%;
+            }
+        }
+        
+        
+    </style>
+</head>    
 <body>
+    <input type="checkbox" name="" id="menu-switch">
     <section class="nav">
-            <h1 class="logo">
-                    <a href="./index.html"><img src="./pic/Group 28.png" alt="lightshot logo"></a>
-                <div class="Logo">light shot</div>
-            </h1>
-            <ul class="nav-bar">
-                <li><a href="./work.html">作品</a></li>
-                <li><a href="./maps.html">關於我們</a></li>
-                <li><a href="./rent.html">我要租棚</a></li>
-                <li><a href="./forum.html">我要討論</a></li>
-                <li><a href="./shoot.html">我要拍攝</a></li>
-                <li><a href="./knowledge.html">攝影知識</a></li>
-                <a href="javascript:"><i class="fa-solid fa-user-large"></i></a>
-            </ul>
-        </section>
+        <h1 class="logo">
+            <a href="./index.html"><img src="./pic/Group 28.png" alt="lightshot"></a>
+        </h1>
+        <label for="menu-switch" class="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="nav-bar">
+            <li><a href="./work.html">作品</a></li>
+            <li><a href="./maps.html">關於我們</a></li>
+            <li><a href="./rent.html">我要租棚</a></li>
+            <li><a href="./forum.html">我要討論</a></li>
+            <li><a href="./shoot.html">我要拍攝</a></li>
+            <li><a href="./knowledge.html">攝影知識</a></li>
+        </ul>
+    </section>
+    <div class="fake"></div>
+    <ul class="scroll-nav">
+        <li><a href="#food">美食拍攝</a></li>
+        <li><a href="#outdoor">戶外拍攝</a></li>
+        <li><a href="#portrait">人像拍攝</a></li>
+        <li><a href="#product">產品拍攝</a></li>
+    </ul>
     <section class="shoot">
         <div class="container">
-            <h2>攝影報價</h2>
+            <h2>拍攝報價</h2>
             <div class="row">
-                <div class="col-6">
-                    <div class="card">
+                <div class="col-12 col-md-6">
+                    <div class="card" id="food">
                         <div class="pic">
                             <img src="./photography/food.jpg" alt="美食">
                         </div>
@@ -43,20 +278,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="card">
-                        <div class="pic">
-                            <img src="./photography/outdoor.jpg" alt="戶外">
-                        </div>
-                        <div class="card-content">
-                            <div class="title">戶外拍攝</div>
-                            <div class="money">一套NT$4000</div>
-                            <p>圖檔全給</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="card">
+                <div class="col-12 col-md-6">
+                    <div class="card" id="portrait">
                         <div class="pic">
                             <img src="./photography/portrait.jpg" alt="人像">
                         </div>
@@ -67,8 +290,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="card">
+                <div class="col-12 col-md-6">
+                    <div class="card" id="outdoor">
+                        <div class="pic">
+                            <img src="./photography/outdoor.jpg" alt="戶外">
+                        </div>
+                        <div class="card-content">
+                            <div class="title">戶外拍攝</div>
+                            <div class="money">一套NT$4000</div>
+                            <p>圖檔全給</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card" id="product">
                         <div class="pic">
                             <img src="./photography/product.jpg" alt="產品">
                         </div>
@@ -98,7 +333,7 @@
             </div>
             <div class="txt">
                 <p>使用條款｜隱私權保護政策｜ @ tibame</p>
-                <p>本平台僅供學習、展示之用。 若有侵權疑慮,您可以私訊緯育TibaMe,後續會由專人協助處理。</p>
+                <p class="P">本平台僅供學習、展示之用。 若有侵權疑慮,您可以私訊緯育TibaMe,後續會由專人協助處理。</p>
             </div>
         </div>
     </div>
