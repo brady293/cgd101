@@ -34,9 +34,7 @@ body{
 }
 .container{
     width: 1200px;
-    margin: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+
 }
 .forum{
     position: relative;
@@ -74,27 +72,65 @@ body{
     margin: 70px;
 }
 .message{
-    background-image: url(./user/forum.jpeg);
+    /* background-image: url(./user/forum.jpeg); */
     background-size: cover;
     width: 100%;
     min-height: 700px;
     position: absolute;
 }
 .message h3{
-    position: relative;
-    top: 40px;
-    left: 200px;
-    font-size: 30px;
-    width: 300px;
-    color: #94928d;
+    text-align: center;
+    font-size: 25px;
 }
-.message .name{
+.message .Item-group{
+    margin: 20px;
+}
+.user-message-board{
+    overflow: auto;
+    height: 30em;
+}
+.user-message-board .card{
+    background-color: #539987;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    cursor:  pointer;
+}
+.user-message-board .card:hover{
+    background-color: #4A7C59;
+}
+.user-message-board .card-title{
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+}
+.user-message-board .card-title .icon{
+    margin: 0 10px;
+}
+.user-message-board .card-title .title span{
+    color: aqua;
+}
+.user-message-board .User
+,.user-message-board .store{
+    padding: 5px 10px;
+}
+.user-message-board .card-footer{
+    display: flex;
+    align-items: center;
+}
+.user-message-board .Times-watched{
+    display: flex;
+}
+.user-message-board .Times-watched .minute{
+    margin: 0 10px;
+}
+/* .message .name{
     position: relative;
     top: 70px;
     left: 200px;
     width: 150px;
     background-color: #ccc;
-}
+} */
 .message .ask{
     position: relative;
     top: 100px;
@@ -104,10 +140,10 @@ body{
     background-color: #ccc;
 }
 .message .btn-3{
-    position: relative;
+    /* position: relative;
     top: 120px;
-    left: 550px;
-    width: 80px;
+    left: 550px; */
+    /* width: 80px; */
     font-size: 15px;
     border-radius: 15%;
     box-shadow: 3px 3px rgba(0, 0, 0, 0.473);
@@ -119,7 +155,7 @@ body{
     width: 50px;
     height: 50px;
     position: relative;
-    top: 450px;
+    top: 500px;
     left: 200px;
     font-size: 60px;
 }
@@ -127,13 +163,13 @@ body{
     width: 50px;
     height: 50px;
     position: relative;
-    top: 450px;
+    top: 500px;
     left: 200px;
     font-size: 60px;
     margin: 50px;
 }
 .footer .txt{
-    top: 430px;
+    top: 480px;
     left: 200px;
     position: relative;
     color: #aaa;

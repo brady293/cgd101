@@ -70,30 +70,14 @@ h2{
     margin: 20px 0;
     color: #44433f;
 }
-.reserve .item .process{
+.reserve .pic{
     text-align: center;
-    font-size: 25px;
-    color: #94928d;
-}
-.reserve .item ul {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-.reserve .item li{
-    width: 80px;
-    padding: 70px;
-    margin: 10px;
-    border-radius: 100%;
-    border:3px solid#fa0;
-    font-size: 30px;
-    color: #fa0;
 }
 .reserve .box{
     display: flex;
     justify-content: center;
     width: 1000px;
-
+    margin: auto;
 }
 .box .cancel-change{
     width: 400px;
