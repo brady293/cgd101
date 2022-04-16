@@ -48,7 +48,7 @@ body{
 .item-group{
     display: flex;
 }
-.item-group .card{
+.item-group .Card{
     width: 254px;
     margin: 70px;
     border: 3px solid #fdb837;
@@ -72,7 +72,6 @@ body{
     margin: 70px;
 }
 .message{
-    /* background-image: url(./user/forum.jpeg); */
     background-size: cover;
     width: 100%;
     min-height: 700px;
@@ -89,14 +88,14 @@ body{
     overflow: auto;
     height: 30em;
 }
-.user-message-board .card{
+.user-message-board .Card{
     background-color: #539987;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
     cursor:  pointer;
 }
-.user-message-board .card:hover{
+.user-message-board .Card:hover{
     background-color: #4A7C59;
 }
 .user-message-board .card-title{
@@ -124,13 +123,6 @@ body{
 .user-message-board .Times-watched .minute{
     margin: 0 10px;
 }
-/* .message .name{
-    position: relative;
-    top: 70px;
-    left: 200px;
-    width: 150px;
-    background-color: #ccc;
-} */
 .message .ask{
     position: relative;
     top: 100px;
@@ -140,10 +132,6 @@ body{
     background-color: #ccc;
 }
 .message .btn-3{
-    /* position: relative;
-    top: 120px;
-    left: 550px; */
-    /* width: 80px; */
     font-size: 15px;
     border-radius: 15%;
     box-shadow: 3px 3px rgba(0, 0, 0, 0.473);
