@@ -24,7 +24,19 @@
 					backgroundColor:'green',
 				},500,'easeOutBack');
             })
-        });
+        })
+        function showLightBox(){
+            document.getElementById('lightBox').style.display='block';
+        }
+        function cancelBox(){
+            document.getElementById('lightBox').style.display='none';
+        }
+        function init(){
+            document.getElementById('one').onclick=showLightBox;
+            document.getElementById('cancelbtn').onclick=cancelBox;
+        }
+
+        window.addEventListener("load",init,false);
     </script>
     <style>
         body{
@@ -132,12 +144,39 @@
         }
         #lightBox{
             position: fixed;
-            top: 80px;
-            right: 230px;
-            height: 50%;    
+            top: 0;
+            left: 0;
+            width: 100%;    
+            height: 100%;
+            z-index: 1;
+            background-color: rgba(0,0,0,.5);
+            /* display: none; */
+        }
+        .imgbox{
+            width: 100%; 
+            max-width: 1000px;
+            max-height: 80%;
+            position: absolute;
+            top: 100px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
         }
         #lightBox img{
             border-radius: 10%;
+        }
+        #lightBox .fa-xmark{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 0px;
+            right:60px;
+            background-color: #24B9F9;
+            border-radius: 100%;
+            font-size: 40px;
+            text-align: center;
         }
         .sever img{
             width: 100%;
@@ -368,9 +407,6 @@
             .sever{
                 margin-top: 150px;
             }
-            .sever .big-card{
-
-            }
             .sever .big-card .item{
                 width: 50%;
                 display: flex;
@@ -425,10 +461,18 @@
     <div class="banner">
         <div class="container">
             <h2>最新作品</h2>
+            <div id="lightBox">
+                <div class="imgbox">
+                    <img src="./pic/01.jpg" alt="">
+                    <div id="cancelbtn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+            </div>
             <div class="newpicture">
                 <div class="Pic">
                     <div class="pic">
-                        <img class="lt" src="./pic/01.png" alt="left top" id="one">
+                        <img class="lt" id="one" src="./pic/01.png" alt="left top" >
                     </div>
                     <div class="pic">
                         <img class="rt" src="./pic/02.png" alt="left bottom" >
@@ -443,9 +487,6 @@
                         <img class="c" src="./pic/05.png" alt="right bottom " >
                     </div>
                 </div>
-            </div>
-            <div id="lightBox"style="display:none">
-                <img src="./pic/01.jpg" alt="">
             </div>
         </div>
     </div>

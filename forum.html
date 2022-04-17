@@ -16,7 +16,7 @@
         $(function(){
             $('.Card').mousemove(function(e){
                 let theText = $(this).attr('data-text');
-                $('#text').text(theText),show().css({
+                $('#text').text(theText).show().css({
                     left:e.clientX + 10,
                     top:e.clientY + 10,
                 })
@@ -171,6 +171,7 @@
             margin: 20px;
         }
         .user-message-board{
+            position: relative;
             overflow: auto;
             height: 30em;
         }
@@ -252,7 +253,7 @@
                 width: 30%;
             }
         }
-        @media screen and (min-width:992px){
+        @media screen and (min-width:1200px){
             .hb{
                 display: none;
             }
@@ -270,6 +271,9 @@
             }
             .bigcard .Ans{
                 font-size: 17px;
+            }
+            .Card .title{
+                font-size:17px;
             }
         }
         
