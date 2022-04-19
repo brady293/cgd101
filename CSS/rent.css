@@ -1,0 +1,128 @@
+body{
+    background-color: #DDDBDB;
+}
+.nav{
+    background-color: #FFFDF5;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 20;
+    position: sticky;
+    top: 0;
+}
+.nav .logo img{
+    width: 200px;
+    padding: 15px 30px ;
+}
+.nav .nav-bar {
+    display: flex;
+    align-items: center;
+}
+.nav .nav-bar a{
+    text-decoration: none;
+    color:#013F1D;
+    margin: 15px;
+}
+.nav .Logo{
+    display: none;
+    z-index: -1000;
+}
+.nav .member{
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+}
+h2{
+    font-size: 30px;
+    padding: 30px;
+    color:#94928d;
+}
+.photo-studio .title-pic{
+    padding:40px;
+}
+.photo-studio .title-pic img{
+    width: 1110px;
+}
+.photo-studio .place-pic{
+    overflow: hidden;
+}
+.photo-studio .place-pic img{
+    width: 100%;
+    opacity: 1;
+    transition: all .3s ease-out;
+}
+.photo-studio .place-pic img:hover{
+    transform: scale(1.3);
+    opacity: .5;
+}
+.price .title{
+    font-size: 25px;
+    color: #94928d;
+    margin: 30px 0;
+    text-align: center;
+}
+.price .card .style{
+    color:#AB7D7D;
+    font-size: 25px;
+}
+.price .people, .weekday, .holiday, .other{
+    font-size: 20px;
+    margin: 20px 0;
+    color: #44433f;
+}
+.reserve .pic{
+    text-align: center;
+}
+.reserve .box{
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    margin: auto;
+}
+.box .cancel-change{
+    width: 400px;
+    margin: 50px;
+}
+.box .cancel-change .title{
+    padding: 10px 0;
+    color: #AB7D7D;
+    font-size: 25px;
+}
+.box .cancel-change p{
+    font-size: 15px;
+    line-height: 1.5;
+    color: #44433f;
+    text-indent: -1em;
+}
+.box .cancel-change span{
+    color: red;
+}
+.box .notice{
+    margin: 50px;
+}
+.box .notice .title{
+    padding: 10px 0;
+    color: #AB7D7D;
+    font-size: 25px;
+}
+.box .notice p{
+    font-size: 15px;
+    line-height: 1.5;
+    color: #44433f;
+}
+.footer .container{
+    display: flex;
+}
+.footer .community{
+    margin: 20px;
+}
+.footer .community i{
+    font-size: 60px;
+    padding: 10px;
+}
+.footer .txt{
+    color: #aaa;
+    width: 500px;
+    line-height: 1.5;
+    margin: 20px;
+}

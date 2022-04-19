@@ -1,0 +1,100 @@
+body{
+    background-color: #DDDBDB;
+}
+.nav{
+    background-color: #FFFDF5;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 20;
+    position: sticky;
+    top: 0;
+}
+.nav .logo img{
+    width: 200px;
+    padding: 15px 30px ;
+}
+.nav .nav-bar {
+    display: flex;
+    align-items: center;
+}
+.nav .nav-bar a{
+    text-decoration: none;
+    color:#013F1D;
+    margin: 15px;
+}
+.nav .Logo{
+    display: none;
+    z-index: -1000;
+}
+.nav .member{
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+}
+.shoot h2{
+    font-size: 30px;
+    padding: 30px 0;
+    color: #94928d;
+}
+.shoot .card{
+    border: 2px solid #aaa;
+    padding: 10px;
+}
+.shoot .pic{
+    overflow: hidden;
+}
+.shoot .pic img{
+    width: 100%;
+    opacity: 1;
+    transition: all .3s ease;
+}
+.shoot .pic img:hover{
+    opacity: .7;
+}
+.shoot .card-content{
+    text-align: center;
+    padding: 10px;
+}
+.card-content .title{
+    font-size: 20px;
+    color: #AB7D7D;
+}
+.card-content .money{
+    font-size: 15px;
+    padding: 10px;
+    color: #94928d;
+}
+.card-content p{
+    color: #94928d;
+    font-size: 15px;
+}
+.process .item{
+    width: 500px;
+    margin: 10px;
+}
+.process .title{
+    font-size: 30px;
+    color: #464542;
+}
+.process p{
+    font-size: 25px;
+    color: #94928d;
+    padding: 10px 0;
+}
+.footer .container{
+    display: flex;
+}
+.footer .community{
+    margin: 20px;
+}
+.footer .community i{
+    font-size: 60px;
+    padding: 10px;
+}
+.footer .txt{
+    color: #aaa;
+    width: 500px;
+    line-height: 1.5;
+    margin: 20px;
+}
