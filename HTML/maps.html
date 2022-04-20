@@ -5,135 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>關於我們</title>
-    <!-- <link rel="stylesheet" href="./maps.css"> -->
+    <link rel="stylesheet" href="../CSS/maps.css">
     <link rel="stylesheet" href="../CSS/reset.css">
     <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/css/all.css">
     <link rel="stylesheet" href="../CSS/all.min.css">
     <link rel="shortcut icon" href="../pic/indexpic/favicon.ico">
-    <style>
-        body{
-            background-color: #DDDBDB;
-        }
-        .nav{
-            background-color: hsl(48, 100%, 98%);
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-        .nav h1{
-            margin: auto;
-            width: 200px;
-            padding-top: 10px;
-        }
-        .nav h1 img{
-            width: 100%;    
-            vertical-align: top;
-        }
-        .hb{
-            width: 40px;
-            height: 40px;
-            background-color: transparent;
-            position: relative;
-            border-radius: 30%;
-            
-        }
-        .hb span{
-            position: absolute;
-            width: 34px;
-            height: 2px;
-            background-color: #013F1D;
-            left: 0;
-            right: 0;
-            margin: auto;
-        }
-        .hb span:first-child{
-            top: 11px;
-        }
-        .hb span:nth-child(2){
-            top: 0;
-            bottom: 0;
-        }
-        .hb span:last-child{
-            bottom: 11px;
-        }
-        #menu-switch{
-            position: fixed;
-            z-index: -20;
-            top: 0;
-        }
-        #menu-switch:checked ~ .nav .hb span:first-child{
-            top: 19px;
-            transform: rotate(45deg);
-            transition: top .8s,transform .3s .3s;
-        } 
-        #menu-switch:checked ~ .nav .hb span:nth-child(2){
-            display: none;
-        }
-        #menu-switch:checked ~ .nav .hb span:last-child{
-            bottom: 19px;
-            transform: rotate(135deg);
-            transition: bottom .8s,transform .3s .3s;
-        }
-        .nav-bar{
-            position: absolute;
-            background-color: rgb(247, 202, 113);
-            top: 100%;
-            left: -100%;
-            width: 100%;
-        }
-        #menu-switch:checked ~ .nav .nav-bar{
-            left: 0;
-            transition: left .5s;
-        }
-        .nav-bar a{
-            display: block;
-            padding: 10px;
-            color: #013F1D;
-            text-decoration: none;
-            text-align: center;
-        } 
-        .maps .about{
-            padding-left: 15px;
-            padding-right: 15px;
-            line-height: 1.5;
-        }
-        .maps h2{
-            font-size: 25px;
-        }
-        .item{
-            background-color: #36b16d;
-            margin: 10px;
-            text-align: center;
-        }
-        .item .Maps{
-            display: none;
-        }
-        .item .store-name{
-            padding: 10px;
-            font-size: 20px;
-        }
-        .item .time{
-            padding: 10px;
-            line-height: 1.3;
-        }
-        .item .place{
-            padding: 10px;
-            line-height: 1.3;
-        }
-        .item .smallmap{
-            display: flex;
-            padding: 5px;
-            align-items: center;
-            justify-content: center;
-        }
-        .item .tellphone{
-            padding: 5px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="../CSS/grid.css">
 </head>
 <body>
     <input type="checkbox" name="" id="menu-switch">
@@ -154,7 +31,6 @@
             <li><a href="./forum.html">我要討論</a></li>
             <li><a href="./shoot.html">我要拍攝</a></li>
             <li><a href="./knowledge.html">攝影知識</a></li>
-            <a href=""><i class="fa-solid fa-user-large"></i></a>
         </ul>
     </section>
     <section class="maps">
@@ -165,7 +41,7 @@
             </div>
             <div class="item-group">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 col-md-4">
                         <div class="item">
                             <div class="Maps">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1898.7097671242673!2d121.56432369952131!3d25.033370760576947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abb6da80a7ad%3A0xacc4d11dc963103c!2z5Y-w5YyXMTAx!5e0!3m2!1szh-TW!2stw!4v1648648238858!5m2!1szh-TW!2stw" width="100%" height="200px" hstyle="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -181,11 +57,11 @@
                             </div>
                             <div class="smallmap">
                                 <div class="tellphone">0900-111-222</div>
-                                 <i class="fa-solid fa-location-dot"></i>
+                                <a href="https://www.google.com/maps/place/%E5%8F%B0%E5%8C%97101/@25.0338041,121.5295372,13z/data=!4m9!1m2!2m1!1s101!3m5!1s0x3442abb6da80a7ad:0xacc4d11dc963103c!8m2!3d25.0338041!4d121.5645561!15sCgMxMDFaBSIDMTAxkgEPc2hvcHBpbmdfY2VudGVy"><i class="fa-solid fa-location-dot"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 col-md-4">
                         <div class="item">
                             <div class="Maps">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d555.5681190951274!2d120.64614297074014!3d24.178985595405983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3469162259b6852b%3A0xf1a08e8dacfe639!2z6YCi55Sy5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1648661821316!5m2!1szh-TW!2stw" width="100%" height="200px" hstyle="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -201,11 +77,11 @@
                             </div>
                             <div class="smallmap">
                                 <div class="tellphone">0900-333-444</div>
-                                <i class="fa-solid fa-location-dot"></i>
+                                <a href="https://www.google.com/maps/place/%E9%80%A2%E7%94%B2%E5%A4%9C%E5%B8%82/@24.1788237,120.611442,13z/data=!4m9!1m2!2m1!1z6YCi55Sy!3m5!1s0x3469162259b6852b:0xf1a08e8dacfe639!8m2!3d24.1788237!4d120.6464609!15sCgbpgKLnlLJaCSIH6YCiIOeUspIBDG5pZ2h0X21hcmtldA"><i class="fa-solid fa-location-dot"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 col-md-4">
                         <div class="item">
                             <div class="Maps">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.905997088282!2d120.27934001495123!3d22.619985236930162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e047620e1c45b%3A0xe6d6d1bd1c764df2!2z6aeB5LqM6Jed6KGT54m55Y2A!5e0!3m2!1szh-TW!2stw!4v1648661956124!5m2!1szh-TW!2stw" width="100%" height="200px" hstyle="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -221,7 +97,7 @@
                             </div>
                             <div class="smallmap">
                                 <div class="tellphone">0900-555-666</div>
-                                <i class="fa-solid fa-location-dot"></i>
+                                <a href="https://www.google.com/maps/place/%E9%A7%81%E4%BA%8C%E8%97%9D%E8%A1%93%E7%89%B9%E5%8D%80/@22.6199803,120.27934,17z/data=!3m1!4b1!4m5!3m4!1s0x346e047620e1c45b:0xe6d6d1bd1c764df2!8m2!3d22.6198972!4d120.2815443"><i class="fa-solid fa-location-dot"></i></a>
                             </div>
                         </div>
                     </div>
@@ -232,12 +108,14 @@
     <div class="footer">
         <div class="container">
             <div class="community">
-                <i class="fa-brands fa-facebook-square"></i>
-                <i class="fa-brands fa-instagram"></i>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
             </div>
             <div class="txt">
                 <p>使用條款｜隱私權保護政策｜ @ tibame</p>
-                <p>本平台僅供學習、展示之用。 若有侵權疑慮,您可以私訊緯育TibaMe,後續會由專人協助處理。</p>
+                <div class="P">
+                    <p>本平台僅供學習、展示之用。 若有侵權疑慮,您可以私訊緯育TibaMe,後續會由專人協助處理。</p>
+                </div>
             </div>    
         </div>    
     </div>

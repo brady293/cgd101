@@ -9,447 +9,10 @@
     <link rel="stylesheet" href="../CSS/all.min.css">
     <link rel="stylesheet" href="../CSS/reset.css">
     <link rel="shortcut icon" href="./pic/favicon.ico">
+    <link rel="stylesheet" href="../CSS/index.css">
     <script src="../js/jquery-3.6.0.js"></script>
     <script src="../jquery_source/jquery-ui.js"></script>
-    <script>
-        $(function(){
-            // $('.item').scrollTop(function(){
-            //     $(this).stop(true).animate({
-            //         left:'100px',
-            //     },2500,'easeOutCirc');
-            // },
-            // function(){
-            //     $(this).animate({
-			// 		left:'100px',
-			// 	},2500,'');
-            // })
-            // $('.item').scrollTop(function(){
-            //     $(this).stop(true).animate({
-            //         right:'100px',
-            //     },2500,'easeOutCirc');
-            // },
-            // function(){
-            //     $(this).animate({
-			// 		left:'100px',
-			// 	},2500,'');
-            // })
-        })
-        
-        window.addEventListener("load",function(){
-        function cancelBox(){
-            document.getElementById('lightBox').style.display='none';}
-            
-            let lightbox = document.getElementById('lightBox');
-            let pic = document.getElementsByClassName('pic');
-            lightbox.style.display="none";
-            
-            for(i=0 ; i<pic.length ;i++){
-                pic[i].addEventListener("click" , function(){
-                    lightbox.style.display="block";
-                })
-            }
-            document.getElementById('cancelbtn').onclick=cancelBox;
-        })
-
-
-
-    </script>
-    <style>
-        body{
-            background-color: #DDDBDB;
-        }
-        .nav{
-            background-color: hsl(48, 100%, 98%);
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-        .nav h1{
-            margin: auto;
-            width: 200px;
-            padding-top: 10px;
-        }
-        .nav h1 img{
-            width: 100%;    
-            vertical-align: top;
-        }
-        .hb{
-            width: 40px;
-            height: 40px;
-            background-color: transparent;
-            position: relative;
-            border-radius: 30%;
-            
-        }
-        .hb span{
-            position: absolute;
-            width: 34px;
-            height: 2px;
-            background-color: #013F1D;
-            left: 0;
-            right: 0;
-            margin: auto;
-        }
-        .hb span:first-child{
-            top: 11px;
-        }
-        .hb span:nth-child(2){
-            top: 0;
-            bottom: 0;
-        }
-        .hb span:last-child{
-            bottom: 11px;
-        }
-        #menu-switch{
-            position: fixed;
-            z-index: -20;
-            top: 0;
-        }
-        #menu-switch:checked ~ .nav .hb span:first-child{
-            top: 19px;
-            transform: rotate(45deg);
-            transition: top .8s,transform .3s .3s;
-        } 
-        #menu-switch:checked ~ .nav .hb span:nth-child(2){
-            display: none;
-        }
-        #menu-switch:checked ~ .nav .hb span:last-child{
-            bottom: 19px;
-            transform: rotate(135deg);
-            transition: bottom .8s,transform .3s .3s;
-        }
-        .nav-bar{
-            position: absolute;
-            background-color: rgb(247, 202, 113);
-            top: 100%;
-            left: -100%;
-            width: 100%;
-        }
-        #menu-switch:checked ~ .nav .nav-bar{
-            left: 0;
-            transition: left .5s;
-        }
-        .nav-bar a{
-            display: block;
-            padding: 10px;
-            color: #013F1D;
-            text-decoration: none;
-            text-align: center;
-        } 
-        .banner,.sever{
-        padding: 30px 20px;
-        }
-        .banner h2{
-            font-size: 25px;
-            padding-bottom: 30px;
-            color: #24B9F9;
-        }
-        .banner .newpicture .Pic{
-            margin: auto;
-        }
-        .banner .newpicture .pic,.sever .item {
-            --aa:15PX;
-            margin-left: var(--aa);
-            margin-right: var(--aa);
-        }
-        .banner .newpicture .pic img{
-            width: 100%;
-        }
-        #lightBox{
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;    
-            height: 100%;
-            z-index: 1;
-            background-color: rgba(0,0,0,.5);
-            /* display: none; */
-        }
-        .imgbox{
-            width: 100%; 
-            max-width: 1000px;
-            max-height: 80%;
-            position: absolute;
-            top: 100px;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-
-        }
-        #lightBox img{
-            border-radius: 10%;
-        }
-        #lightBox .fa-xmark{
-            width: 40px;
-            height: 40px;
-            position: absolute;
-            top: -10px;
-            right:75px;
-            background-color: #24B9F9;
-            border-radius: 100%;
-            font-size: 40px;
-            text-align: center;
-        }
-        .sever img{
-            width: 100%;
-            border-radius:10%;
-        }
-        .sever .txt{
-            text-align: center;
-        } 
-        .sever h3{
-            font-size: 20px;
-            color: #8E7E7E;
-            margin: 20px;
-        }
-        .sever p{
-            color: #B2A5A5;
-            line-height: 1.5;
-        }
-        .sever .more{
-            padding: 30px 0;
-        }
-        .sever .txt-footer{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-        .sever a{
-            text-decoration: none;
-            color: #B2A5A5;
-
-        }
-        .sever .txt .txt-footer .fa-arrow-right-long{
-            position: relative;
-            animation-name: arrow;
-            animation-duration: .5s;
-            transition: ease;
-            animation-iteration-count: infinite;
-        }
-        @keyframes arrow{
-            from{right: 140px;}
-            to{right:150px;}
-        }
-
-        ul.slides{
-            position: relative;
-            height: 300px;
-            background-color: #aaa;
-            overflow: hidden;
-            width:100%;
-            background-size: cover;
-        }
-        li.slide{
-            width: inherit;
-            height: inherit;
-            position: absolute;
-            top: 0;
-            left: 0;
-            font-size: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: rgb(255, 83, 83);
-            transition: .5s transform ease-in-out;
-        }
-        .slide:nth-of-type(1){
-            background-image: url(../pic/indexpic/janpan.jpg);
-            background-size: cover;
-            min-height: 100px;
-        }
-        .slide:nth-of-type(2){
-            background-image: url(../pic/indexpic/Europe\ and\ America\ .jpeg);
-            left: 100%;
-        }
-        .slide:nth-of-type(3){
-            background-image: url(../pic/indexpic/simple.jpg);
-            left: 200%;
-        }
-        .slide:nth-of-type(4){
-            background-image: url(../pic/indexpic/empty-industrial-room-interior-design_53876-143124.jpg);
-            left: 300%;
-        }
-        input[type="radio"]{
-            position: relative;
-            z-index: 100;
-            display: none;
-        }
-        .controls-visible{
-            position: absolute;
-            width: 100%;
-            bottom: 12px;
-            text-align: center;
-        }
-        .controls-visible label{
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            background-color: #fff;
-            border-radius: 50%;
-            margin: 0 3px;
-            border: 2px solid#fff;
-        }
-        .slides input[type="radio"]:nth-of-type(1):checked ~ .controls-visible label:nth-of-type(1){
-            background-color: #aaa;
-        }
-        .slides input[type="radio"]:nth-of-type(2):checked ~ .controls-visible label:nth-of-type(2){
-            background-color: #aaa;
-        }
-        .slides input[type="radio"]:nth-of-type(3):checked ~ .controls-visible label:nth-of-type(3){
-            background-color: #aaa;
-        }
-        .slides input[type="radio"]:nth-of-type(4):checked ~ .controls-visible label:nth-of-type(4){
-            background-color: #aaa;
-        }
-        .slides input[type="radio"]:nth-of-type(1):checked ~ .slide{
-            transform: translateX(0%);
-        }
-        .slides input[type="radio"]:nth-of-type(2):checked ~ .slide{
-            transform: translateX(-100%);
-        }
-        .slides input[type="radio"]:nth-of-type(3):checked ~ .slide{
-            transform: translateX(-200%);
-        }
-        .slides input[type="radio"]:nth-of-type(4):checked ~ .slide{
-            transform: translateX(-300%);
-        }
-        .forum{
-            text-align: center;
-            background-image: url(../pic/indexpic/talk.jpg);
-            background-size: cover;
-            padding: 10px 0 ;
-        }
-        .forum h3{
-            font-size: 20px;
-            color: rgb(0, 17, 255);
-        }
-        .footer{
-            padding: 10px 30px;
-        }
-        .footer .logo{
-            width: 150px;
-        }
-        .footer img{
-            width: 100%;
-        }
-        .footer .fa-facebook-square{
-            padding-right: 5px;
-            font-size: 30px;
-            color: #000;
-        }
-        .footer .fa-facebook-square:hover{
-            color: blue;
-        }
-        .footer .community .fa-instagram{
-            font-size: 30px;
-            color: #000;
-        }
-        .footer .community .fa-instagram:hover{
-            background: linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b);
-            -webkit-background-clip: text;
-            color: transparent;
-        }
-        .footer .txt p{
-            font-size: 15px;
-            color: #8F8686;
-            line-height: 1.5;
-        }
-        .footer .txt .P{
-            color:#c0bcbc;
-        }
-
-        
-        @media screen and (min-width:768px){
-            .banner{
-                position: relative;
-            }
-            .banner .Pic,.sever .big-card{
-                display: flex;
-                flex-wrap: wrap;
-            }
-            .banner .pic,.sever .item{
-                width: calc(100%/2 - var(--aa)*2);
-            }
-        }
-        @media screen and (min-width:1200px){
-            .hb{
-                display: none;
-            }
-            .nav-bar{
-                display: flex;
-                align-items: center;
-                justify-content: flex-end;
-                position: relative;
-                left: 0;
-                background-color: transparent;
-                transition: none;
-            }
-            .container{
-                width: 1200px;
-                margin: auto;
-            }
-            .banner .pic{
-                width: calc(100%/3 - var(--aa)*2);
-            }
-            .banner .Pic .pic img{
-                width: 90%;
-            }
-            .banner .pic .lt{
-                position: relative;
-                left: 200px;
-            }
-            .banner .pic .rt{
-                position: relative;
-                left: 200px;
-            }
-            .banner .pic .rb{
-                position: relative;
-                right: 20px;
-                top: 260px;
-            }
-            .banner .pic .c{
-                position: relative;
-                top: 10px;
-            }
-            .banner .pic .lb{
-                position: relative;
-                top: 10px;
-            }
-            .sever{
-                margin-top: 150px;
-            }
-            .sever .big-card .item{
-                width: 50%;
-                display: flex;
-                gap: 30px;
-                margin-bottom: 100px;
-            }
-            .sever .item:nth-child(even){
-                flex-direction: row-reverse;
-                /* position: absolute;
-                left: 470px; */
-            }
-            .sever .item:nth-child(odd){
-                position: relative;
-                left: -800px;
-            }
-            .sever .item:nth-child(odd) .pic,
-            .sever .item:nth-child(even) .txt{
-                position: relative;
-                top: -20px;
-            }
-            .sever .big-card .item .txt{
-                width: 150%;
-            }
-        }
-        
-        
-    </style>
+    <script src="../js/index.js"></script>
 </head>
 <body>
     <input type="checkbox" name="" id="menu-switch">
@@ -472,7 +35,6 @@
             <li><a href="./knowledge.html">攝影知識</a></li>
         </ul>
     </section>
-
 
     <div class="banner">
         <div class="container">
@@ -508,8 +70,8 @@
     </div>
     <div class="sever">
         <div class="container">
-            <div class="big-card" >
-                <div class="item">
+            <div class="big-card">
+                <div class="item slideUp-right">
                     <div class="pic">
                         <img src="../pic/indexpic/sever1.jpg" alt="">
                     </div>
@@ -524,7 +86,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item" >
+                <div class="item slideUp-left" >
                     <div class="pic">
                         <img src="../pic/indexpic/sever2.jpg" alt="">
                     </div>
@@ -540,7 +102,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item slideUp-right">
                     <div class="pic">
                         <img src="../pic/indexpic/sever3.png" alt="">
                     </div>
@@ -555,7 +117,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item slideUp-left">
                     <div class="pic">
                         <img src="../pic/indexpic/product.jpg" alt="">
                     </div>
@@ -602,9 +164,6 @@
         </form>
     </div>
     <div class="footer">
-        <div class="logo">
-            <img src="./pic/Group 28.png" alt="lightshot logo">
-        </div>
         <div class="community">
             <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-square"></i></a>
             <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
