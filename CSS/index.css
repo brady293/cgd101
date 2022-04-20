@@ -138,38 +138,6 @@ padding: 30px 20px;
     font-size: 40px;
     text-align: center;
 }
-.slideUp{
-    animation-name: slideUp-right;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    visibility: visible;
-}
-@keyframes slideUp-right{
-    0%{
-        opacity: 0;
-        transform: translateX(0);
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(200px);
-    }
-}
-.slideUp-left{
-    animation-name: slideUp-left;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    visibility: visible;
-}
-@keyframes slideUp-left{
-    0%{
-        opacity: 0;
-        transform: translateX(1000px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(500px);
-    }
-}
 .sever img{
     width: 100%;
     border-radius:10%;
@@ -429,5 +397,37 @@ input[type="radio"]{
     .imgbox{
         max-width: 800px;
         top:20%;
+    }
+    .slideUp{
+        animation-name: slideUp-right;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        visibility: visible;
+    }
+    @keyframes slideUp-right{
+        0%{
+            opacity: 0;
+            transform: translateX(0);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(200px);
+        }
+    }
+    .slideUp-left{
+        animation-name: slideUp-left;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        visibility: visible;
+    }
+    @keyframes slideUp-left{
+        0%{
+            opacity: 0;
+            transform: translateX(1000px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(500px);
+        }
     }
 }

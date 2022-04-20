@@ -1,128 +1,219 @@
 body{
     background-color: #DDDBDB;
-}
-.nav{
-    background-color: #FFFDF5;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    z-index: 20;
-    position: sticky;
-    top: 0;
-}
-.nav .logo img{
-    width: 200px;
-    padding: 15px 30px ;
-}
-.nav .nav-bar {
-    display: flex;
-    align-items: center;
-}
-.nav .nav-bar a{
-    text-decoration: none;
-    color:#013F1D;
-    margin: 15px;
-}
-.nav .Logo{
-    display: none;
-    z-index: -1000;
-}
-.nav .member{
-    display: flex;
-    align-items: center;
-    padding: 10px 30px;
-}
-h2{
-    font-size: 30px;
-    padding: 30px;
-    color:#94928d;
-}
-.photo-studio .title-pic{
-    padding:40px;
-}
-.photo-studio .title-pic img{
-    width: 1110px;
-}
-.photo-studio .place-pic{
-    overflow: hidden;
-}
-.photo-studio .place-pic img{
-    width: 100%;
-    opacity: 1;
-    transition: all .3s ease-out;
-}
-.photo-studio .place-pic img:hover{
-    transform: scale(1.3);
-    opacity: .5;
-}
-.price .title{
-    font-size: 25px;
-    color: #94928d;
-    margin: 30px 0;
-    text-align: center;
-}
-.price .card .style{
-    color:#AB7D7D;
-    font-size: 25px;
-}
-.price .people, .weekday, .holiday, .other{
-    font-size: 20px;
-    margin: 20px 0;
-    color: #44433f;
-}
-.reserve .pic{
-    text-align: center;
-}
-.reserve .box{
-    display: flex;
-    justify-content: center;
-    width: 1000px;
-    margin: auto;
-}
-.box .cancel-change{
-    width: 400px;
-    margin: 50px;
-}
-.box .cancel-change .title{
-    padding: 10px 0;
-    color: #AB7D7D;
-    font-size: 25px;
-}
-.box .cancel-change p{
-    font-size: 15px;
-    line-height: 1.5;
-    color: #44433f;
-    text-indent: -1em;
-}
-.box .cancel-change span{
+    }
+    .nav{
+        background-color: hsl(48, 100%, 98%);
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+    .nav h1{
+        margin: auto;
+        width: 200px;
+        padding-top: 10px;
+    }
+    .nav h1 img{
+        width: 100%;    
+        vertical-align: top;
+    }
+    .hb{
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        position: relative;
+        border-radius: 30%;
+        
+    }
+    .hb span{
+        position: absolute;
+        width: 34px;
+        height: 2px;
+        background-color: #013F1D;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .hb span:first-child{
+        top: 11px;
+    }
+    .hb span:nth-child(2){
+        top: 0;
+        bottom: 0;
+    }
+    .hb span:last-child{
+        bottom: 11px;
+    }
+    #menu-switch{
+        position: fixed;
+        z-index: -20;
+        top: 0;
+    }
+    #menu-switch:checked ~ .nav .hb span:first-child{
+        top: 19px;
+        transform: rotate(45deg);
+        transition: top .8s,transform .3s .3s;
+    } 
+    #menu-switch:checked ~ .nav .hb span:nth-child(2){
+        display: none;
+    }
+    #menu-switch:checked ~ .nav .hb span:last-child{
+        bottom: 19px;
+        transform: rotate(135deg);
+        transition: bottom .8s,transform .3s .3s;
+    }
+    .nav-bar{
+        position: absolute;
+        background-color: rgb(247, 202, 113);
+        top: 100%;
+        left: -100%;
+        width: 100%;
+    }
+    #menu-switch:checked ~ .nav .nav-bar{
+        left: 0;
+        transition: left .5s;
+    }
+    .nav-bar a{
+        display: block;
+        padding: 10px;
+        color: #013F1D;
+        text-decoration: none;
+        text-align: center;
+    } 
+    .photo-studio h2{
+        padding: 20px 0;
+        font-size: 25px;
+        color: #24B9F9;
+    }
+    .photo-studio .title-pic img{
+        width: 100%;
+        border-radius: 10%;
+        margin-bottom: 10%;
+    }
+    .photo-studio .place-pic{
+        aspect-ratio: 1/1;
+    }
+    .photo-studio .place-pic img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10%;
+    }
+    .price{
+        padding: 5%;
+    }
+    .price .title{
+        padding: 10% 0;
+        font-size: 20px;
+        color: #A17C6B;
+    }
+    .price .card{
+        color: #4A7C59;
+        background-color: #e4b765;
+        padding: 10px;
+        border-radius: 10%;
+    }
+    .card .style, .card .peple,.card .weekday{ 
+        padding: 10px 0;
+    }
+    .card .holiday{
+        padding: 5px 0;
+    }
+    .card .other{
+        padding: 5px 0;
+    }
+    .reserve .pic img{
+        width: 100%;
+    }
+    .reserve .box{
+        margin-top: 10%;
+    }
+    .title{
+        color: #A17C6B;
+    }
+    .box .cancel-change{
+        margin-bottom: 5%;
+        line-height: 1.5;
+        color:#4A7C59;
+    }
+    .box .cancel-change span{
     color: red;
+    }
+    .box .notice{
+        line-height: 1.5;
+        color:#4A7C59;
+    }
+    .footer .community{
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 10px;
 }
-.box .notice{
-    margin: 50px;
-}
-.box .notice .title{
-    padding: 10px 0;
-    color: #AB7D7D;
-    font-size: 25px;
-}
-.box .notice p{
-    font-size: 15px;
-    line-height: 1.5;
-    color: #44433f;
-}
-.footer .container{
-    display: flex;
-}
-.footer .community{
-    margin: 20px;
-}
-.footer .community i{
-    font-size: 60px;
-    padding: 10px;
-}
-.footer .txt{
-    color: #aaa;
-    width: 500px;
-    line-height: 1.5;
-    margin: 20px;
-}
+    .community .fa-facebook-square{
+    color: #000;
+    }
+    .community .fa-facebook-square:hover{
+        color: blue;
+    }
+    .community .fa-instagram{
+        color: #000;
+    }
+    .community .fa-instagram:hover{
+    background: linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b);
+    -webkit-background-clip: text;
+    color: transparent;
+    }
+    .txt{
+        color: #8F8686;
+        padding: 10px 0;
+    }
+    .txt .P{
+        color:#c0bcbc;
+    }
+    @media screen and (min-width:768px){
+        .reserve .box{
+            display: flex;
+            justify-content: space-around;
+        }
+        .reserve .cancel-change{
+            width: 50%;
+        }
+        .reserve .cancel-change p,
+        .reserve .notice p{
+            text-indent: -10px;
+        }
+        .reserve .notice{
+            width: 40%;
+        }
+        .footer{
+            width: 70%;
+        }
+    }
+    @media screen and (min-width:1200px){
+        .hb{
+        display: none;
+        }
+        .nav-bar{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            position: relative;
+            left: 0;
+            background-color: transparent;
+            transition: none;
+        }
+        .container{
+            width: 1200px;
+            margin: auto;
+        }
+        .price .title{
+            padding: 5% 0;
+        }
+        .reserve .box{
+            justify-content: space-evenly;
+        }
+        .footer{
+            width: 100%;
+        }
+    }

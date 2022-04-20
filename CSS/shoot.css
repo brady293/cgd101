@@ -212,8 +212,7 @@ color: transparent;
         justify-content: flex-end;
         position: relative;
         left: 0;
-        background-color: transparent;
-        transition: none;
+        background-color: transparent; 
     }
     .container{
         width: 1200px;
