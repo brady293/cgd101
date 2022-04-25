@@ -2,6 +2,8 @@
 // let targetHeight = document.getElementsByClassName("item")[0].getBoundingClientRect();
 // let targeLine = targetHeight - 0.5 * window.innerHeight;
 // window.onscroll = function(){myFunction()};
+
+//滑鼠捲動圖片秀出
 let targetHeight = 0;
 function calc() {
     targetHeight = document.getElementsByClassName("item")[0].getBoundingClientRect().top;
@@ -23,16 +25,14 @@ function myFunction() {
     }
 }
 
-
-
-
+//燈箱
 window.addEventListener("load", function () {
     function cancelBox() {
         document.getElementById('lightBox').style.display = 'none';
     }
 
     let lightbox = document.getElementById('lightBox');
-    let pic = document.getElementsByClassName('pic');
+    let pic = document.querySelectorAll('#pic');
     lightbox.style.display = "none";
 
     for (i = 0; i < pic.length; i++) {

@@ -1,75 +1,231 @@
 body{
     background-color: #DDDBDB;
-}
-.nav{
-    background-color: #FFFDF5;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    z-index: 20;
-    position: sticky;
-    top: 0;
-}
-.nav .logo img{
-    width: 200px;
-    padding: 15px 30px ;
-}
-.nav .nav-bar {
-    display: flex;
-    align-items: center;
-}
-.nav .nav-bar a{
-    text-decoration: none;
-    color:#013F1D;
-    margin: 15px;
-}
-.nav .Logo{
-    display: none;
-    z-index: -1000;
-}
-.nav .member{
-    display: flex;
-    align-items: center;
-    padding: 10px 30px;
-}
-h2{
+    }
+    .nav{
+        background-color: hsl(48, 100%, 98%);
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+    .nav h1{
+        margin: auto;
+        width: 200px;
+        padding-top: 10px;
+    }
+    .nav h1 img{
+        width: 100%;    
+        vertical-align: top;
+    }
+    .hb{
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        position: relative;
+        border-radius: 30%;
+        
+    }
+    .hb span{
+        position: absolute;
+        width: 34px;
+        height: 2px;
+        background-color: #013F1D;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .hb span:first-child{
+        top: 11px;
+    }
+    .hb span:nth-child(2){
+        top: 0;
+        bottom: 0;
+    }
+    .hb span:last-child{
+        bottom: 11px;
+    }
+    #menu-switch{
+        position: fixed;
+        z-index: -20;
+        top: 0;
+    }
+    #menu-switch:checked ~ .nav .hb span:first-child{
+        top: 19px;
+        transform: rotate(45deg);
+        transition: top .8s,transform .3s .3s;
+    } 
+    #menu-switch:checked ~ .nav .hb span:nth-child(2){
+        display: none;
+    }
+    #menu-switch:checked ~ .nav .hb span:last-child{
+        bottom: 19px;
+        transform: rotate(135deg);
+        transition: bottom .8s,transform .3s .3s;
+    }
+    .nav-bar{
+        position: absolute;
+        background-color: rgb(247, 202, 113);
+        top: 100%;
+        left: -100%;
+        width: 100%;
+    }
+    #menu-switch:checked ~ .nav .nav-bar{
+        left: 0;
+        transition: left .5s;
+    }
+    .nav-bar a{
+        display: block;
+        padding: 10px;
+        color: #013F1D;
+        text-decoration: none;
+        text-align: center;
+    }
+    .item .pic{
+        aspect-ratio: 1/1;
+    }
+    .item .pic img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .collection h2{
+        padding: 5% 0;
+        font-size: 20px;
+        color: #7389AE;
+    }
+    .collection .item-group{
+        background-color: #bbe2c1;
+        overflow: hidden;
+        padding: 3% 0;
+    }
+    .collection .slider{
+        position: relative;
+        top: 5px;
+        left: 5px;
+        width: 1000px;
+        transition: left 1s;
+    }
+    .collection .slider .item{
+        margin: 5px;
+        width: 10%;
+        background-color: transparent;
+        text-align: center;
+        float: left;
+    }
+    .collection .slider p{
+        color: #606060;
+    }
+    .btn{
+        text-align: center;
+        margin: 1%;
+    }
+    button{
+        border-radius: 100%;
+        border: none;
+        width: 30px;
+        height: 30px;
+        background-color: #23b8f9;
+    }
+    .btn .fa-chevron-left,
+    .btn .fa-angle-right{
+        font-size: 25px;
+        color: #fff;
+    }
+    .animation{
+        margin: 20px 0;
+        width: 100%;
+    }
+    .animation .pic{
+        position: relative;
+        padding-bottom: 80%;
+    }
+    .animation .pic img{
+        display: none;
+        width: 100%;
+        height: 100%;
+        border-radius: 10%;
+        object-fit: cover;
+        position: absolute;
+    }
+    .animation .pic img:nth-child(1){
+        display: block;
+    }
+    .footer{
+        padding: 30px 0; 
+    }
+    .footer .community{
+    padding: 0 30px;
     font-size: 30px;
-    padding: 30px 10px;
-    color: #94928d;
-}
-.item{
-    width: 370px;
-    margin: 15px;
-    position: relative;
-}
-.item .pic img{
-    width: 100%;
-}
-.item p{
-    position: absolute;
-    background-color: #fff;
-    color: #94928d;
-    margin: auto;
-    left: 0;
-    right: 0;
-    width: 300px;
-    bottom: -30px;
-    font-size: 25px;
-    padding: 10px;
-}
-.footer .container{
-    display: flex;
-}
-.footer .community{
-    margin: 20px;
-}
-.footer .community i{
-    font-size: 60px;
-    padding: 10px;
-}
-.footer .txt{
-    color: #aaa;
-    width: 500px;
-    line-height: 1.5;
-    margin: 20px;
-}
+    padding-top: 50px;
+    padding-bottom: 10px;
+    }
+    .community .fa-facebook-square{
+        color: #000;
+    }
+    .community .fa-facebook-square:hover{
+        color: blue;
+    }
+    .community .fa-instagram{
+        color: #000;
+    }
+    .community .fa-instagram:hover{
+    background: linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b);
+    -webkit-background-clip: text;
+    color: transparent;
+    }
+    .txt{
+        color: #8F8686;
+        padding: 0 30px;
+    }
+    .txt .P{
+        color:#c0bcbc;
+    }
+    @media screen and (min-width:768px){
+        .collection h2{
+            font-size: 25px;
+        }
+        .collection .item-group{
+            padding: 1% 0;
+        }
+        .collection .slider{
+            width: 150%;
+        }
+        .btn{
+            display: none;
+        }
+        .animation .pic{
+            padding-bottom: 70%;
+        }
+        .footer{
+            padding: 10px 0;
+        }
+        .txt{
+            width: 70%;
+        }
+    }
+    @media screen and (min-width:1200px){
+        .hb{
+        display: none;
+        }
+        .nav-bar{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            position: relative;
+            left: 0;
+            background-color: transparent;
+            transition: none;
+        }
+        .container{
+            width: 1200px;
+            margin: auto;
+        }
+        .collection .slider{
+            width: 155%;
+        }
+        .txt{
+            width: 50%;
+        }
+    }

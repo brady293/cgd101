@@ -89,49 +89,37 @@ body{
     display: none;
     background-color: antiquewhite;
 }
+.forum{
+    width: 100%;
+}
 .forum h2{
-    margin: 30px 0;
+    margin: 30px 10px;
     font-size: 25px;
-    color: #24B9F9;
+    color: #7389AE;
 }
-.forum .pic img{
-    width: 40px;
-    height:40px;
-    border-radius: 50%;
-} 
-.forum .bigcard{
-    background-color: #ccc;
+.item{
+    margin: 10px 0;
+}
+.controller{
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 5px 10px;
-    font-size: 14px;
-    border-radius: 50% 20% / 10% 40%;;
+    background-color: #DBF4A7;
+    padding: 10px;
+    font-size: 20px;
 }
-.bigcard .name{
-    color:#A17C6B;
+.text{
+    padding: 10px;
+    background-color: #c4eb8e;
+    font-size: 20px;
 }
-.bigcard .question{
-    color: #4A7C59;
-}
-.bigcard .question p{
-    width:100px;
-}
-.bigcard .Ans{
-    display: flex;
-    align-items: center;
-    width: 150px;
-    color: #539987;
-}
-.forum .card{
-    display: flex;
-    align-items: center;
-}
-.forum .card .user{
-    text-align: center;
-    margin: 5%;
-}
-.Item-group{
-    color: #135470;
+.text.X{
+    display: none;
+} 
+button{
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
 }
 .message h3{
     text-align: center;
@@ -221,6 +209,7 @@ body{
     color: #c0bcbc;
 }
 @media screen and (min-width:768px){
+    .
     .footer .txt{
         width: 30%;
     }

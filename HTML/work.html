@@ -11,12 +11,19 @@
     <link rel="stylesheet" href="../CSS/work.css">
     <link rel="stylesheet" href="../CSS/grid.css">
     <link rel="shortcut icon" href="../pic/indexpic/favicon.ico">
+    <script src="../js/work.js"></script>
 </head>
 <body>
+    <input type="checkbox" id="menu-switch">
     <section class="nav">
         <h1 class="logo">
                 <a href="./index.html"><img src="../pic/indexpic/logo.png" alt="lightshot"></a>
         </h1>
+        <label for="menu-switch" class="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
         <ul class="nav-bar">
             <li><a href="./work.html">作品</a></li>
             <li><a href="./maps.html">關於我們</a></li>
@@ -24,76 +31,64 @@
             <li><a href="./forum.html">我要討論</a></li>
             <li><a href="./shoot.html">我要拍攝</a></li>
             <li><a href="./knowledge.html">攝影知識</a></li>
-            <a href=""><i class="fa-solid fa-user-large"></i></a>
         </ul>
     </section>
     <section class="collection">
         <div class="container">
             <h2>作品</h2>
-            <div class="row">
-                <div class="col-4">
+            <div class="item-group">
+                <div class="slider">
                     <div class="item">
                         <div class="pic">
                             <img src="../pic/work/sea.JPG" alt="">
                         </div>
                         <p>高雄駁二店 | 戶外拍攝</p>
                     </div>
-                </div>
-                <div class="col-4">
                     <div class="item">
                         <div class="pic">
                             <img src="../pic/work/light.JPG" alt="">
                         </div>
                         <p>台中逢甲店 | 戶外拍攝</p>
                     </div>
-                </div>
-                <div class="col-4">
                     <div class="item">
                         <div class="pic">
                             <img src="../pic/work/tea house.jpg" alt="">
                         </div>
                         <p>台中逢甲店 | 戶外拍攝</p>
                     </div>
-                </div>
-                <div class="col-4">
                     <div class="item">
                         <div class="pic">
-                            <img src="../pic/work/392_Digital_marketing_social_media_post_template.jpg" alt="">
+                            <img src="../pic/work/taking-path-mountains.jpg" alt="">
                         </div>
-                        <p>高雄駁二店 | 廣告拍攝</p>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="item">
+                        <p>台北101店 | 戶外拍攝</p>
+                    </div><div class="item">
                         <div class="pic">
-                            <img src="../pic/work/food.jpg" alt="">
+                            <img src="../pic/work/medium-shot-happy-peopl0.jpg" alt="">
                         </div>
-                        <p>台中逢甲店 | 拍攝美食</p>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="item">
+                        <p>台北101店 | 戶外拍攝</p>
+                    </div><div class="item">
                         <div class="pic">
-                            <img src="../pic/work/fishing.JPG" alt="">
+                            <img src="../pic/work/young-man .jpg" alt="">
                         </div>
                         <p>台北101店 | 戶外拍攝</p>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="item">
-                        <div class="pic">
-                            <img src="../pic/work/cup.jpg" alt="">
-                        </div>
-                        <p>台北101店 | 商品拍攝</p>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="item">
-                        <div class="pic">
-                            <img src="../pic/work/apparel.jpg" alt="">
-                        </div>
-                        <p>台北101店 | 商業攝影</p>
-                    </div>
+            </div>
+            
+            <div class="btn">
+                <button id="prev" disabled><i class="fa-solid fa-chevron-left"></i></button>
+                <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+            
+            <div class="animation">
+                <div class="pic">
+                    <img id="img" src="../pic/work/grapes-strawberries-pineapple-kiwi-apricot-banana-whole-pineapple_23-2147968680.jpg" alt="">
+                    <img id="img" src="../pic/work/apparel.jpg" alt="">
+                    <img id="img" src="../pic/work/portrait-young-beautiful-smiling-girl-trendy-summer-light-pink-dress-sexy-carefree-woman-posing-positive-model-having-fun-dancing-round-sunglasses_158538-5151.jpg" alt="">
+                    <img id="img" src="../pic/work/cup.jpg" alt="">
+                    <img id="img" src="../pic/work/spa-treatment-with-natural-cosmetics_23-2148346071.jpg" alt="">
+                    <img id="img" src="../pic/work/cheerful-man-pointing-finger-left-advertise-product_176420-18862.jpg" alt="">
+                    <img id="img" src="../pic/work/cowboy-horseback-against-beautiful-sunset_35752-2201.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -101,12 +96,12 @@
     <div class="footer">
         <div class="container">
             <div class="community">
-                <i class="fa-brands fa-facebook-square"></i>
-                <i class="fa-brands fa-instagram"></i>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
             </div>
             <div class="txt">
                 <p>使用條款｜隱私權保護政策｜ @ tibame</p>
-                <p>本平台僅供學習、展示之用。 若有侵權疑慮,您可以私訊緯育TibaMe,後續會由專人協助處理。</p>
+                <p class="P">本平台僅供學習、展示之用。 若有侵權疑慮,您可以私訊緯育TibaMe,後續會由專人協助處理。</p>
             </div>    
         </div>    
     </div>
