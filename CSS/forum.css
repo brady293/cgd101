@@ -16,8 +16,7 @@ body{
     padding-top: 10px;
 }
 .nav h1 img{
-    width: 100%;    
-    vertical-align: top;
+    width: 100%;
 }
 .hb{
     width: 40px;
@@ -105,6 +104,7 @@ body{
     align-items: center;
     justify-content: space-between;
     background-color: #DBF4A7;
+    color: #4aa56f;
     padding: 10px;
     font-size: 20px;
 }
@@ -112,6 +112,7 @@ body{
     padding: 10px;
     background-color: #c4eb8e;
     font-size: 20px;
+    color: #397e56;
 }
 .text.X{
     display: none;
@@ -125,18 +126,16 @@ button{
     text-align: center;
     font-size: 25px;
     margin: 5%;
-    color: #24B9F9;
-}
-.message .Item-group{
-    margin: 20px;
+    color: #97d5b6;
 }
 .user-message-board{
     position: relative;
     overflow: auto;
     height: 30em;
+    color: #6f9464;
 }
 .user-message-board .Card{
-    background-color: #539987;
+    background-color: #e2f2bf;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
@@ -144,7 +143,7 @@ button{
     cursor:  pointer;
 }
 .user-message-board .Card:hover{
-    background-color: #4A7C59;
+    background-color: #becca0;
 }
 .user-message-board .card-title{
     display: flex;
@@ -156,12 +155,12 @@ button{
     margin: 0 10px;
 }
 .user-message-board .card-title .title span{
-    color: aqua;
+    color: #6fb58e;
 }
 .user-message-board .User
 ,.user-message-board .store{
     padding: 5px 10px;
-    color:greenyellow;
+    color:#8cca86;
 }
 .user-message-board .card-footer{
     display: flex;
@@ -176,6 +175,9 @@ button{
 }
 .massage-board{
     text-align: center;
+}
+.massage-board .name{
+    margin: 10px;
 }
 .massage-board .pic img{
     width: 100%;
@@ -209,7 +211,6 @@ button{
     color: #c0bcbc;
 }
 @media screen and (min-width:768px){
-    .
     .footer .txt{
         width: 30%;
     }
@@ -226,6 +227,12 @@ button{
         left: 0;
         background-color: transparent;
         transition: none;
+    }
+    .container{
+        width: 1200px;
+    }
+    .nav-bar .Forum{
+        color: #1eb17b;
     }
     .bigcard .question{
         font-size: 18px;

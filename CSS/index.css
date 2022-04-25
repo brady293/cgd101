@@ -196,7 +196,7 @@ li.slide{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(255, 83, 83);
+    color: #fa0;
     transition: .5s transform ease-in-out;
 }
 .slide{

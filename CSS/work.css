@@ -1,10 +1,10 @@
-body{
+    body{
     background-color: #DDDBDB;
     }
     .nav{
         background-color: hsl(48, 100%, 98%);
-        padding: 10px;
         display: flex;
+        padding: 10px;
         justify-content: space-between;
         position: sticky;
         top: 0;
@@ -16,8 +16,7 @@ body{
         padding-top: 10px;
     }
     .nav h1 img{
-        width: 100%;    
-        vertical-align: top;
+        width: 100%;
     }
     .hb{
         width: 40px;
@@ -82,6 +81,7 @@ body{
         text-decoration: none;
         text-align: center;
     }
+    
     .item .pic{
         aspect-ratio: 1/1;
     }
@@ -96,7 +96,7 @@ body{
         color: #7389AE;
     }
     .collection .item-group{
-        background-color: #bbe2c1;
+        background-color: #d9ecfa ;
         overflow: hidden;
         padding: 3% 0;
     }
@@ -115,7 +115,7 @@ body{
         float: left;
     }
     .collection .slider p{
-        color: #606060;
+        color: #435a73;
     }
     .btn{
         text-align: center;
@@ -126,7 +126,7 @@ body{
         border: none;
         width: 30px;
         height: 30px;
-        background-color: #23b8f9;
+        background-color: #7cb6d7;
     }
     .btn .fa-chevron-left,
     .btn .fa-angle-right{
@@ -217,6 +217,9 @@ body{
             left: 0;
             background-color: transparent;
             transition: none;
+        }
+        .nav-bar .work{
+            color: #1eb17b;
         }
         .container{
             width: 1200px;

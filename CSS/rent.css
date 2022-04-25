@@ -107,16 +107,19 @@ body{
     .price .title{
         padding: 10% 0;
         font-size: 20px;
-        color: #A17C6B;
+        color: #d9b87c;
     }
     .price .card{
-        color: #4A7C59;
-        background-color: #e4b765;
+        color: #c08a22;
+        background-color: #d9c6a2; 
         padding: 10px;
         border-radius: 10%;
     }
     .card .style, .card .peple,.card .weekday{ 
         padding: 10px 0;
+    }
+    .price .card1{
+        padding-bottom: 35px;
     }
     .card .holiday{
         padding: 5px 0;
@@ -206,6 +209,9 @@ body{
         .container{
             width: 1200px;
             margin: auto;
+        }
+        .nav-bar .rent{
+            color: #1eb17b;
         }
         .price .title{
             padding: 5% 0;

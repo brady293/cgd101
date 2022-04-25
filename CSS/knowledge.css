@@ -97,12 +97,16 @@ body{
 }
 .knowledge .txt{
     line-height: 1.4;
-    color:#539987;
+    background-image: linear-gradient(-225deg, #1b6eeb 0%, #87add3 48%, #05355f 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;   
     padding: 5%;
 }
 .knowledge .txt .title{
-    color: #A17C6B;
+    color:#669ac0;
     font-size: 20px;
+    padding: 5%;
 }
 .footer .txt{
     padding: 5%;
@@ -153,6 +157,9 @@ color: transparent;
         left: 0;
         background-color: transparent;
         transform: none;
+    }
+    .nav-bar .Knowledge{
+        color: #1eb17b;
     }
     .container{
         width: 1200px;
