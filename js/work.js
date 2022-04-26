@@ -1,30 +1,30 @@
-//輪播
-function prev(id){
-    return document.getElementById(id);
-}
+// //輪播
+// function prev(id){
+//     return document.getElementById(id);
+// }
 
-window.addEventListener("load", function(){
+// window.addEventListener("load", function(){
 
-    let wrap = document.querySelector(".slider");
-    let curIndex = 0;
+//     let wrap = document.querySelector(".slider");
+//     let curIndex = 0;
 
-    prev("prev").onclick = function(){
-        curIndex--;
-        wrap.style.left = -320 * curIndex + "px";
-        if(curIndex == 0){
-            prev("prev").disabled = true;
-        }
-        prev("next").disabled = false;
-    }
-    prev("next").onclick = function(){
-        curIndex++;
-        wrap.style.left = -320 * curIndex + "px";
-        if(curIndex == 1){
-            prev("next").disabled = true;
-        }
-        prev("prev").disabled = false;
-    }
-})
+//     prev("prev").onclick = function(){
+//         curIndex--;
+//         wrap.style.left = -320 * curIndex + "px";
+//         if(curIndex == 0){
+//             prev("prev").disabled = true;
+//         }
+//         prev("next").disabled = false;
+//     }
+//     prev("next").onclick = function(){
+//         curIndex++;
+//         wrap.style.left = -320 * curIndex + "px";
+//         if(curIndex == 1){
+//             prev("next").disabled = true;
+//         }
+//         prev("prev").disabled = false;
+//     }
+// })
 //自動輪播
 let cur = 0;
 let t =2000;
