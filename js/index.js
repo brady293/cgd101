@@ -12,7 +12,7 @@ function calc() {
 
 
 function myFunction() {
-    targeLine = targetHeight - 0.4 * window.innerHeight;
+    targeLine = targetHeight - 0.8 * window.innerHeight;
     console.log(targeLine)
     if (window.scrollY > targeLine
         || document.documentElement.scroll > targeLine) {
@@ -20,7 +20,7 @@ function myFunction() {
             console.log(document.getElementsByClassName("item")[i])
             setTimeout(() => {
                 document.getElementsByClassName("slideUp-right")[i].classList.add("slideUp");
-            },300* i )
+            },700* i )
         }
     }
 }
