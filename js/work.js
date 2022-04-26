@@ -31,7 +31,7 @@ let t =2000;
 let tm;
 let imgs;
 window.onload=function(){
-    imgs=document.querySelectorAll('#img');
+    imgs=document.querySelectorAll('.img');
     tm=setInterval(show,t);
 }
 function show(){
