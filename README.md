@@ -1,3 +1,1 @@
-# cgd101
-tibame_profile_self
-#
+#light shot 攝影公司
